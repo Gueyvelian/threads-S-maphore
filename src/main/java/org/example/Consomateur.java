@@ -16,7 +16,6 @@ public class Consomateur extends monThread {
     public void run() {
         while (true) {
             try {
-
                 semaphore.acquire(); // down du sémaphore
             } catch (InterruptedException ex) {}
             // début section critique
